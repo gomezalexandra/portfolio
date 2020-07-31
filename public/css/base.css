@@ -1,0 +1,168 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.page {
+    margin-left: 70px;
+}
+
+.navbar {
+    background: #181818;
+    width: 70px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.logo {
+    display: block;
+    padding-top: 8px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu a, .link a {
+    margin: 10px 0 10px 0;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 0;
+    text-align: center;
+    margin: 0;
+}
+
+.cv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cv a {
+    position: fixed;
+    color: black;
+}
+/*
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.menu, .cv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a, .cv a, .logo {
+    margin: 15px;
+}*/
+
+/*début partie 6 timeline*/
+
+.container
+{
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.container:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: rgb(140,80,27);
+    z-index: 1
+}
+
+.timeline-block
+{
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+}
+
+.timeline-block-right
+{
+    float: right;
+}
+
+.timeline-block-left
+{
+    float: left;
+    direction: rtl
+}
+
+.marker
+{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: rgb(115,52,16);
+    margin-top: 10px;
+    z-index: 9999
+}
+
+.timeline-content
+{
+    width: 95%;
+    padding: 0 15px;
+}
+
+.timeline-content h3
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 300;
+    color: black;
+}
+
+.timeline-content span
+{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.timeline-content p
+{
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: #888;
+}
+
+/* fin partie 6 timeline*/

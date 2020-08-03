@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} my work {% endblock %}
+
+{% block body %}
+
+        <h1 class="title">My work</h1>
+
+        <div class="description_projet1">
+            <a href="http://agomez.site/webagency/">
+                <div class="banner">
+                    <div class="slider">
+                        <figure>
+                            <img class="image" src="{{ asset('images/projet1.jpg') }}" alt="page web"/>
+                            <img class="image" src="{{ asset('images/projet1bis.jpg') }}" alt="page web"/>
+                            <img class="image" src="{{ asset('images/projet1.jpg') }}" alt="page web"/>
+                        </figure>
+                    </div>
+                </div>
+            </a>
+            <div class="description">
+                <a href="http://agomez.site/webagency/"><p class="brown">Projet 1 : Intégrer la maquette d'une agence Web</p></a>
+                <p>A partir d'un maquette, création d'un site internet avec du HTML et CSS uniquement et gestion de la responsivité avec des Medias Queries.</br>Ce projet m'a apporté des connaissances en HTML et CSS mais aussi de l'autonomie dans la recherche de solutions en développement web. J'ai appris à mettre en place une structure dans le code et à m'organiser avec efficacité.</p>
+                <p>Projet réalisé après 2 mois de formation chez OpenClassrooms (en parallèle d'une activité professionnelle à temps plein).</p>
+            </div>
+        </div>
+
+        <div class="description_projet2">
+            <a href="https://www.agomez.site/officetourisme/">
+                <div class="banner">
+                    <div class="slider">
+                        <figure>
+                            <img class="image" src="{{ asset('images/projet2.jpg') }}" alt="page web"/>
+                            <img class="image" src="{{ asset('images/projet2bis.jpg') }}" alt="page web"/>
+                            <img class="image" src="{{ asset('images/projet2.jpg') }}" alt="page web"/>
+                        </figure>
+                    </div>
+                </div>
+            </a>
+            <div class="description">
+                <a href="https://www.agomez.site/officetourisme/"><p class="brown">Projet 2 : Créer un site en personnalisant un thème WordPress</p></a>
+                <p>Création d'un site à partir d'une demande client détaillée. Les choix du graphisme et du contenu sont laissés libres.</br>Utilisation du thème Mesmerize et des pluggins Yoast SEO, Events Manager, TablePress et Ninja Forms entre autres.</br>Ce projet m'a permis d'aller plus loin dans le "penser client" en tant qu'utilisateur final et de mettre en pratique des techniques d'optimisation du référencement (SEO).</p>
+                <p>Projet réalisé en 2 mois de formation chez OpenClassrooms (en parallèle d'une activité professionnelle à temps plein).</p>
+            </div>
+        </div>
+
+        <div class="description_projet3">
+            <a href="https://www.agomez.site/locationvelos/">
+                <div class="banner">
+                    <div class="slider">
+                        <figure>
+                            <img class="image" src="{{ asset('images/projet3.jpg') }}" alt="page web"/>
+                            <img class="image" src="{{ asset('images/projet3bis.jpg') }}" alt="page web"/>
+                            <img class="image" src="{{ asset('images/projet3.jpg') }}" alt="page web"/>
+                        </figure>
+                    </div>
+                </div>
+            </a>
+            <div class="description">
+                <a href="https://www.agomez.site/locationvelos/"><p class="brown">Projet 3 : Concevoir une carte intéractive de location de vélos</p></a>
+                <p>Création d'un site de location de vélos. Site créé en mode Single Page Application et utilisant JavaScript et JQuery.</br>
+                    Intégration d'un élement Canvas pour la signature du client.</br>Ce projet m'a permis d'utiliser un langage de programmation apportant du dynamisme et de la logique. J'ai utilisé l'API de cartographie LeafletJS (<a href="https://leafletjs.com/">https://leafletjs.com/</a>), le web service mis à dispositon par JC Decaux (<a href="https://developer.jcdecaux.com/#/home">https://developer.jcdecaux.com/#/home</a>) et l'API Web Storage.</p>
+                <p>Projet réalisé en 1 mois de formation chez OpenClassrooms.</p>
+            </div>
+        </div>
+
+
+{% endblock %}

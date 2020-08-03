@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('fonts/fontawesome-free/css/all.css') }}"/>
             <link rel="stylesheet" href="{{ asset('css/base.css') }}">
         {% endblock %}
     </head>
@@ -17,21 +18,38 @@
                 </div>
 
                 <div class="menu">
-                    <a class="nav-link" href="{{ path('app_homepage') }}">Home</a>
-                    <a class="nav-link" href="{{ path('app_about') }}">About me</a>
-                    <a class="nav-link" href="{{ path('app_work') }}">My work</a>
-                    <a class="nav-link" href="{{ path('app_background') }}">My background </a>
-                    <a class="nav-link" href="{{ path('app_contact') }}">Get in touch </a>
+                    <a class="nav-link" id="home_text" href="{{ path('app_homepage') }}">
+                        <i class="fas fa-home" id="home_img"></i>
+                    </a>
+                    <a class="nav-link" id="about_text" href="{{ path('app_about') }}">
+                        <i class="far fa-address-card" id="about_img"></i>
+                    </a>
+                    <a class="nav-link" id="work_text" href="{{ path('app_work') }}">
+                        <i class="far fa-eye" id="work_img"></i>
+                    </a>
+                    <a class="nav-link" id="background_text" href="{{ path('app_background') }}">
+                        <i class="fas fa-shoe-prints" id="background_img"></i>
+                    </a>
+                    <a class="nav-link" id="contact_text" href="{{ path('app_contact') }}">
+                        <i class="far fa-envelope" id="contact_img"></i>
+                    </a>
                 </div>
                 <div class="link">
-                    <a class="nav-link" href="{{ path('app_homepage') }}">LinkedIn </a>
+                    <a class="nav-link" id="linkedin_text" href="{{ path('app_homepage') }}">
+                        LinkedIn
+                        <i class="fab fa-linkedin fa-2x" id="linkedin_img"></i>
+                    </a>
+
                 </div>
 
             </nav>
         </header>
 
         <div class="cv">
-            <a class="nav-link" href="{{ path('app_homepage') }}">My CV </a>
+            <a href="{{ asset('cv/agomez_cv.pdf') }}">
+                <p>My CV</p>
+                <i class="fas fa-file-download fa-2x"></i>
+            </a>
         </div>
 
         <div class="page">
@@ -42,7 +60,7 @@
         </div>
 
         {% block javascripts %}
-
+            <script src="{{ asset('js/homepage.js') }}"></script>
         {% endblock %}
     </body>
 </html>

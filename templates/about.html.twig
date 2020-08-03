@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} about me {% endblock %}
+
+{% block body %}
+    <h1 class="title"> About me </h1>
+
+    <div class="profile">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nisi et quam pulvinar molestie nec et ante.
+            Fusce non lobortis dolor. Nam accumsan ornare metus vitae porta. Nunc at lobortis eros, efficitur suscipit turpis.
+            Nam sit amet turpis eget enim interdum elementum at ac risus. Pellentesque a mi a leo bibendum tempus. Vestibulum blandit nisi quis tempor maximus.
+            Quisque lacinia velit quis ligula egestas ornare. In ullamcorper augue velit, quis consequat est accumsan et.
+        </p>
+    </div>
+    <h2> My skills and knowledge</h2>
+
+    <h3>IT</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>MySQL</li>
+        <li>PHP</li>
+        <li>WordPress</li>
+        <li>Divi (WordPress Page Builder)</li>
+        <li>Bootstrap</li>
+        <li>Symfony 4</li>
+        <li>Adobe XD</li>
+        <li>SEO</li>
+        <li>Git</li>
+    </ul>
+
+    <h3>Languages</h3>
+    <ul>
+        <li>French</li>
+        <li>English</li>
+        <li>Spanish</li>
+        <li>Japanese</li>
+    </ul>
+
+    <h2>Abilities</h2>
+    <ul>
+        <li>Organisation: 18 month as claim handler (GMF) and 2 years as site manager and site assistant manager (Elior)</li>
+        <li>Communication: face to face, phone and email</li>
+        <li>Commercial: 2 years in the insurances (GMF)</li>
+        <li>Management: 3 years as team manager (Elior) and Master in Hospitality Management (Ecole de Savignac)</li>
+    </ul>
+    <a class="black" href="{{ path('app_background') }}">More details</a>
+
+
+{% endblock %}

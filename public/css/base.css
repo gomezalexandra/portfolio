@@ -341,10 +341,25 @@ h1, h2 {
     margin: 10px;
 }
 
-.banner:hover
-{
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: #0000009c;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 20px;
+    height: 50%;
+}
+
+.overlay p {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.banner:hover .overlay {
+    opacity: 1;
 }
 
 .description_projet1, .description_projet2, .description_projet3
@@ -429,7 +444,7 @@ h1, h2 {
     border: 2px solid #F5F7FA;
     background: #9535ff;
     margin-top: 10px;
-    z-index: 9999
+    z-index: 2;
 }
 
 .timeline-content
@@ -464,14 +479,15 @@ h1, h2 {
 /* fin partie 6 timeline*/
 
 .homepage_text {
-    position: absolute;
-    top: 20%;
-    left: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 170px);
 }
 
 .cube {
     position: relative;
-    bottom: 80px;
     left: 170px;
     border: solid 2px #9535ff;
     width: 300px;
@@ -500,8 +516,7 @@ h1, h2 {
 
 .box{
     position: relative;
-    top: 0;
-    left: 0;
+    top: 70px;
     width: 300px;
     height: 300px;
     background-color: #babfff;
@@ -685,6 +700,10 @@ h1, h2 {
         margin: 15px;
     }
 
+    .menu_top_links a:hover {
+        color: #9535ff;
+    }
+
     .menu_top_extern {
         display: flex;
         flex-wrap: wrap;
@@ -717,5 +736,33 @@ h1, h2 {
 
     .page {
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .homepage_text {
+        width: calc(100% - 130px);
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+        top: 100px;
+    }
+
+    .cube {
+        width: 200px;
+        height: 200px;
+        top: 50px;
+        left: 130px;
+    }
+
+    .content {
+        font-size: 0.65em;
+    }
+
+    .situation {
+        font-size: 1.4em;
     }
 }

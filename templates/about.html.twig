@@ -3,7 +3,13 @@
 {% block title %} about me {% endblock %}
 
 {% block body %}
-    <h1 class="title"> About me </h1>
+    <div class="title_container">
+        <div class="title_content">
+            <div class="line"></div>
+            <h1>About me</h1>
+            <div class="line"></div>
+        </div>
+    </div>
 
     <div class="profile">
         <p>
@@ -13,41 +19,58 @@
             Quisque lacinia velit quis ligula egestas ornare. In ullamcorper augue velit, quis consequat est accumsan et.
         </p>
     </div>
-    <h2> My skills and knowledge</h2>
 
-    <h3>IT</h3>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>JQuery</li>
-        <li>MySQL</li>
-        <li>PHP</li>
-        <li>WordPress</li>
-        <li>Divi (WordPress Page Builder)</li>
-        <li>Bootstrap</li>
-        <li>Symfony 4</li>
-        <li>Adobe XD</li>
-        <li>SEO</li>
-        <li>Git</li>
-    </ul>
+    <div class="about_details">
+        <div class="skills">
+            <h2> My skills and knowledge</h2>
 
-    <h3>Languages</h3>
-    <ul>
-        <li>French</li>
-        <li>English</li>
-        <li>Spanish</li>
-        <li>Japanese</li>
-    </ul>
+            <h3>IT</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>MySQL</li>
+                <li>PHP 7</li>
+                <li>WordPress 5</li>
+                <li>Divi (WordPress Page Builder)</li>
+                <li>Bootstrap 4</li>
+                <li>Symfony 5</li>
+                <li>Adobe XD</li>
+                <li>SEO</li>
+                <li>Git</li>
+            </ul>
 
-    <h2>Abilities</h2>
-    <ul>
-        <li>Organisation: 18 month as claim handler (GMF) and 2 years as site manager and site assistant manager (Elior)</li>
-        <li>Communication: face to face, phone and email</li>
-        <li>Commercial: 2 years in the insurances (GMF)</li>
-        <li>Management: 3 years as team manager (Elior) and Master in Hospitality Management (Ecole de Savignac)</li>
-    </ul>
-    <a class="black" href="{{ path('app_background') }}">More details</a>
+            <h3>Languages</h3>
+            <ul>
+                <li>French : native language</li>
+                <li>English : fluent - TOEIC : 920 points (April 2019)</li>
+                <li>Spanish : spoken regularly</li>
+                <li>Japanese : studied since May 2014</li>
+            </ul>
+        </div>
+
+        <div class="abilities">
+
+            <h2>My abilities</h2>
+
+            <div class="abilities_list">
+                <h4>Decision making :</h4>
+                <p>18 month as claim handler (GMF) and 2 years as site manager and site assistant manager (Elior)</p>
+                <h4>Communication :</h4>
+                <p>Face to face, phone and email communication</p>
+                <h4>Commercial :</h4>
+                <p>2 years as insurance advisor (GMF)</p>
+                <h4>Management :</h4>
+                <p>3 years as team manager (Elior) and Master in Hospitality Management (Ecole de Savignac)</p>
+            </div>
+
+            <a class="black" href="{{ path('app_background') }}">More details</a>
+
+        </div>
+
+    </div>
+
 
 
 {% endblock %}

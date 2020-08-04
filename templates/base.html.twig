@@ -39,9 +39,48 @@
                         LinkedIn
                         <i class="fab fa-linkedin fa-2x" id="linkedin_img"></i>
                     </a>
+                </div>
+            </nav>
+
+            <nav class="navbar_top">
+                <div class="topbar">
+                    <div class="logo">
+                        <a href="{{ path('app_homepage') }}"> AG </a>
+                    </div>
+                    <div id="menu_logo">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+                </div>
+                <div id="menu_top">
+                    <div class="menu_top_links">
+                        <a class="nav-link" href="{{ path('app_homepage') }}">
+                            Home
+                        </a>
+                        <a class="nav-link" href="{{ path('app_about') }}">
+                            About me
+                        </a>
+                        <a class="nav-link" href="{{ path('app_work') }}">
+                            My work
+                        </a>
+                        <a class="nav-link" href="{{ path('app_background') }}">
+                            My background
+                        </a>
+                        <a class="nav-link" href="{{ path('app_contact') }}">
+                            Contact me
+                        </a>
+                    </div>
+                    <div class="menu_top_extern">
+                            <a class="linkedin" href="{{ path('app_homepage') }}">
+                                <p>LinkedIn</p>
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                            <a class="menu_cv" href="{{ asset('cv/agomez_cv.pdf') }}">
+                                <p>My CV</p>
+                                <i class="fas fa-file-download fa-2x"></i>
+                            </a>
+                    </div>
 
                 </div>
-
             </nav>
         </header>
 

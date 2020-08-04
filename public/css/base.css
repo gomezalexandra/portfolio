@@ -16,6 +16,12 @@
     100% { left: -200%; }
 }
 
+@keyframes grow-right {
+    to {
+        width: 100%;
+    }
+}
+
 @font-face
 {
     font-family: 'podkova';
@@ -39,7 +45,7 @@ a {
     text-decoration: none;
 }
 
-.navbar a {
+.navbar a, .navbar_top a {
     color: #ece1e1;
 }
 
@@ -47,13 +53,26 @@ h1, h2 {
     font-family: 'rhodiumLibre', arial, sans-serif;
 }
 
+.line {
+    background-color: black;
+    height: 2px;
+    width: 0;
+    animation: grow-right 1s linear forwards;
+}
+
 .black {
     color: black;
 }
 
-.title {
-    text-align: center;
-    margin-top: 70px;
+.title_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px 0 80px 0;
+}
+
+.title_content h1 {
+    margin: 0;
 }
 
 .page {
@@ -70,6 +89,14 @@ h1, h2 {
     flex-direction: column;
     justify-content: space-between;
     z-index: 3;
+}
+
+.navbar_top {
+    display: none;
+}
+
+#menu_top {
+    display: none;
 }
 
 .logo {
@@ -207,14 +234,24 @@ h1, h2 {
 }**/
 
 
-/* end part homepage **/
+/* end part homepage */
 
-/* start part about me **/
+/* start part about me */
 
 .profile {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
     justify-content: center;
+}
+
+.skills, .abilities {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    max-width: 400px;
 }
 
 .profile p {
@@ -222,7 +259,32 @@ h1, h2 {
     text-align: justify;
 }
 
-/* end part about me **/
+.about_details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.abilities_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.abilities_list h4 {
+    margin-bottom: 0;
+}
+
+.abilities a{
+    text-align: center;
+    border: 2px solid #9535ff;
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto;
+    width: 150px;
+}
+/* end part about me */
 
     /*
 .navbar {
@@ -526,6 +588,12 @@ h1, h2 {
 
 }
 
+/* part about start **/
+
+
+
+/* part about end **/
+
 /* Part contact start **/
 
 .contact_details {
@@ -560,4 +628,94 @@ h1, h2 {
 }
 
 
-/* Part contact start **/
+/* Part contact end*/
+
+@media screen and (max-width: 1000px)
+{
+    .navbar {
+        display: none;
+    }
+
+    .navbar_top {
+        display: flex;
+        background: #181818;
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .logo {
+        padding: 15px 0 0 15px;
+    }
+
+    #menu_logo {
+        color: white;
+        padding: 15px 15px 0 0;
+    }
+
+    .topbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        width: 100%;
+        z-index: 3;
+    }
+
+    #menu_top {
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .menu_top_links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .menu_top_links a{
+        color: white;
+        margin: 15px;
+    }
+
+    .menu_top_extern {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .menu_cv{
+        margin-top: 20px;
+    }
+
+    .menu_cv i {
+        color: #9535ff;
+        text-align: center;
+    }
+
+    .linkedin i {
+        color: #0077b5;
+        text-align: center;
+    }
+
+    .linkedin p, .menu_cv p {
+        margin-bottom: 8px;
+    }
+
+    .cv {
+        display: none;
+    }
+
+    .page {
+        margin-left: 0;
+    }
+}

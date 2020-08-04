@@ -11,6 +11,16 @@ function randomVisibility(){
     return Math.random() <0.5 ? 'visible' : 'hidden';
 }**/
 
+const menu = document.getElementById("menu_top");
+const menuLogo = document.getElementById("menu_logo");
+menuLogo.addEventListener("click", function(){
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+});
+
 document.getElementById("home_text").onmouseover = function() {mouseOverHome()};
 document.getElementById("home_text").onmouseout = function() {mouseOutHome()};
 

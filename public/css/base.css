@@ -1,3 +1,19 @@
+
+@-webkit-keyframes rotating {
+    from{
+        -ms-transform: skewY(10deg); /* IE 9 */
+        transform: skewY(10deg);
+    }
+    to{
+        -ms-transform: skewY(0deg); /* IE 9 */
+        transform: skewY(0deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 1s linear forwards;
+}
+
 @-webkit-keyframes slideshow
 {
     0% { left: 0%; }
@@ -354,8 +370,19 @@ h1, h2 {
 
 .overlay p {
     text-align: center;
-    padding-top: 20px;
     color: white;
+    margin: 10px;
+}
+
+.eye_overlay {
+    color: #9535ff;
+    bottom: 15px;
+    position: relative;
+    left: calc(50% - 16px);
+    border: 3px solid #9535ff;
+    padding: 5px;
+    border-radius: 22px;
+    background-color: white;
 }
 
 .banner:hover .overlay {
@@ -498,6 +525,9 @@ h1, h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    -ms-transform: skewY(10deg);
+    transform: skewY(10deg);
+    -webkit-animation: rotating 1s ease forwards;
 }
 
 .cube p {
@@ -521,6 +551,9 @@ h1, h2 {
     height: 300px;
     background-color: #babfff;
     z-index: 2;
+    -ms-transform: skewY(10deg);
+    transform: skewY(10deg);
+    -webkit-animation: rotating 1s ease forwards;
 }
 
 .content{
@@ -698,10 +731,17 @@ h1, h2 {
     .menu_top_links a{
         color: white;
         margin: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
     }
 
     .menu_top_links a:hover {
         color: #9535ff;
+    }
+
+    .menu_top_links i {
+        margin-left: 8px;
     }
 
     .menu_top_extern {
@@ -764,5 +804,13 @@ h1, h2 {
 
     .situation {
         font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .overlay p {
+        font-size: 0.8em;
+        margin: -2px;
     }
 }

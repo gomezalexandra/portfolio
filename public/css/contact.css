@@ -1,0 +1,30 @@
+.contact_details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 70px;
+}
+
+.email_contact, .linkedin_contact a, .ireland_number, .france_number {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.email_contact i, .ireland_number i, .france_number i {
+    color: #9535ff;
+    margin-left: 20px;
+}
+
+.linkedin_logo {
+    color: #0077b5;
+    margin-left: 10px;
+}
+
+.linkedin_contact p {
+    color: black;
+}

@@ -15,28 +15,33 @@
     <div class="contact_details">
         <div class="email_contact">
             <p> alexandragomez.work@gmail.com</p>
-            <i class="fas fa-at fa-2x"></i>
+            <i class="fas fa-at"></i>
         </div>
 
         <div class="phone_contact">
-            <div>
+            <div class="ireland_number">
                 <p> Ireland: +353 851 735 369</p>
-                <i class="fas fa-phone-alt fa-2x"></i>
+                <i class="fas fa-phone-alt"></i>
             </div>
-            <div>
+            <div class="france_number">
                 <p> France: +33 6 02 37 94 75</p>
-                <i class="fas fa-phone-alt fa-2x"></i>
+                <i class="fas fa-phone-alt"></i>
             </div>
         </div>
 
         <div class="linkedin_contact">
             <a href="{{ path('app_homepage') }}">
                 <p>LinkedIn</p>
-                <i class="fab fa-linkedin fa-2x linkedin_logo"></i>
+                <i class="fab fa-linkedin linkedin_logo"></i>
             </a>
         </div>
 
     </div>
 
 
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
 {% endblock %}

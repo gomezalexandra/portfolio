@@ -1,0 +1,57 @@
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
+    justify-content: center;
+}
+
+.profile p {
+    text-align: justify;
+}
+
+.profile_description {
+    font-weight: bold;
+    margin: 25px 0 5px 0;
+}
+
+.about_details {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.skills, .abilities {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    max-width: 400px;
+}
+
+.abilities_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.abilities_list h4 {
+    margin-bottom: 0;
+}
+
+.abilities a {
+    text-align: center;
+    border: 2px solid #9535ff;
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto;
+    width: 150px;
+}
+
+.abilities a:hover {
+    background-color: #9535ff;
+    color: white;
+}

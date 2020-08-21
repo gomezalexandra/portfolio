@@ -4,7 +4,6 @@
 
 {% block body %}
 
-
     <div class="title_container">
         <div class="title_content">
             <div class="line"></div>
@@ -13,8 +12,7 @@
         </div>
     </div>
 
-    <div class="container">
-
+    <div class="background_container">
         <div class="timeline-block timeline-block-left">
             <div class="marker"></div>
             <div class="timeline-content">
@@ -26,7 +24,7 @@
                     Main languages studied: HTML, CSS, JavaScript and PHP</br>
                     Also studied for assessments: WordPress, JQuery, Bootstrap, Symfony, Adobe XD and MySQL</br>
                     SEO strategy</br>
-                    Competences in various technical fields and customer management</br>
+                    Competences in various technical fields and customer management
                 </p>
             </div>
         </div>
@@ -38,7 +36,7 @@
                 <span>FormaDistance, WordPress</span>
                 <p>
                     Online formation with a private teacher</br>
-                    Divi Builder</br>
+                    Divi Page Builder</br>
                     SEO Strategy
                 </p>
             </div>
@@ -148,4 +146,9 @@
         </div>
     </div>
 
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/background.css') }}">
 {% endblock %}

@@ -1,16 +1,3 @@
-/*const text = document.getElementById('name');
-const textArr = text.innerText.split('');
-
-const toto = text.innerHTML = `
-    ${textArr.map(letter => `<span
-class="${randomVisibility()}">${letter}
-</span>`).join('')}
-`;
-
-function randomVisibility(){
-    return Math.random() <0.5 ? 'visible' : 'hidden';
-}**/
-
 const menu = document.getElementById("menu_top");
 const menuLogo = document.getElementById("menu_logo");
 menuLogo.addEventListener("click", function(){
